@@ -1,0 +1,39 @@
+Rutuja_6153
+
+This document covers the usage and the design decisions made when developing the PrP2 code.
+
+Usage:-
+Step 1: Change directory to the location the file has been downloaded.
+
+Step 2: Compile the Java Code
+	The code is written in a two java files one for hits(Hits6153.java) and other for page rank(Pgrk6153.java).
+	We can compile the files using the commands:"javac Hits6153.java" and "javac Pgrk6153.java" respectively.(ignore the double quotes while executing)
+
+Step 3: For running the hits algorithm use: "java Hits6153 <iterations> <initialvalue> <filename>" (ignore the double quotes while executing).
+
+	For running the page rank algorithm use: "java Pgrk6153 <iterations> <initialvalue> <filename>" (ignore the double quotes while executing).
+	Note :- Preferably use the complete file path in place of filename.
+
+Design Decisions:-
+
+Hits:- 
+1. Number of arguments passed should be exactly equal to three.
+2. Iterations and initial value has to be integer values.
+3. Each line in the file should be two integers separated by a space.
+4. The first line of the file should contain two numbers, the number of vertices followed by number of edges.
+5. Iterations values cannot be less than -6.
+6. The possible initial values are -2, -1, 0, 1 only.
+7. The number of lines in the input file after the first line has to be equal to the number of edges as provided in line 1.
+
+Page rank:- 
+1. Number of arguments passed should be exactly equal to three.
+2. Iterations and initial value has to be integer values.
+3. Each line in the file should be two integers separated by a space.
+4. The first line of the file should contain two numbers, the number of vertices followed by number of edges.
+5. Iterations values cannot be less than -6.
+6. The possible initial values are -2, -1, 0, 1 only.
+7. The number of lines in the input file after the first line has to be equal to the number of edges as provided in line 1.
+
+
+
+
